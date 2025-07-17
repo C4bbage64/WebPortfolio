@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Muhammad Irfan Deni</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-white shadow">
+        <nav class="container mx-auto flex justify-between p-4">
+            <div class="text-xl font-bold">Muhammad Irfan Deni</div>
+            <div class="space-x-4 text-sm">
+                <a href="/" class="hover:underline">Home</a>
+                <a href="/Projects" class="hover:underline">Projects</a>
+                <a href="/Certifications" class="hover:underline">Certifications</a>
+                <a href="/Contact" class="hover:underline">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-6">
+        @RenderBody()
+    </main>
+
+    <footer class="text-center text-sm text-gray-500 py-4 border-t mt-10">
+        © @DateTime.Now.Year - Muhammad Irfan Deni. All rights reserved.
+    </footer>
+</body>
+</html>
